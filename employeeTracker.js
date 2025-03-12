@@ -13,13 +13,13 @@ console.log(findHighPerformers(employees, 88));
 function averageHoursWorked(employees) {
   return employees.reduce((total, emp) => total + emp.hoursWorked, 0) / employees.length;
 }
-console.log(averageHoursWorked(employees));
+console.log("The average hours worked: " + averageHoursWorked(employees));
 
 //Question 2.c
 function getTopPerformer(employees) {
   return employees.reduce((top, emp) => (emp.performanceScore > top.performanceScore ? emp : top), employees[0]).name;
 }
-console.log(getTopPerformer(employees));
+console.log("Employee with highest performance score is " + getTopPerformer(employees));
 
 //Question 2.d
 function sortEmployeesByTasks(employees) {
@@ -29,4 +29,3 @@ console.log(sortEmployeesByTasks(employees));
 
 //Question 2.e >>> Answer :
 //  -Using map and filter method to ensure immunity and best performance, 
-// -
